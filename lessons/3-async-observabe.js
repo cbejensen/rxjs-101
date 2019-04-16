@@ -2,7 +2,7 @@ import { Observable } from 'rxjs'
 
 const source = new Observable(subscriber => {
   subscriber.next('Hello')
-  setTimeout(() => subscriber.next('world'), 2000)
+  setTimeout(() => subscriber.next('...world'), 2000)
   // subscriber.complete()
 })
 
