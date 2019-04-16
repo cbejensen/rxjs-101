@@ -1,0 +1,35 @@
+body {
+  margin: 3rem;
+}
+
+.get-joke {
+  background: none;
+  border: 3px solid tomato;
+  border-radius: 8px;
+  color: tomato;
+  cursor: pointer;
+  font-size: 2rem;
+  padding: 1rem;
+  transition: 0.2s;
+}
+.get-joke:hover {
+  background: tomato;
+  color: white;
+}
+.get-joke:focus {
+  outline: none;
+}
+.get-joke:active {
+  transform: scale(0.9);
+}
+
+.content {
+  font-size: 3rem;
+}
+
+.count {
+  color: tomato;
+  position: absolute;
+  bottom: 0;
+  font-size: 3rem;
+}

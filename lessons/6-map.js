@@ -6,4 +6,4 @@ const source = from(axios('https://icanhazdadjoke.com/'))
 
 source
   .pipe(map(res => res.data.joke))
-  .subscribe(console.log)
+  .subscribe(console.log, console.error, () => console.log('hey'))

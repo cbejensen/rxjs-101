@@ -3,8 +3,6 @@ import { Observable } from 'rxjs'
 const source = new Observable(observer => {
   observer.next('hello')
   observer.next('world')
-  // observer.error('error')
-  // observer.complete('complete')
   return () => console.log('unsubscribed')
 })
 
