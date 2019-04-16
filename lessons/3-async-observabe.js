@@ -7,9 +7,7 @@ const source = new Observable(subscriber => {
 })
 
 console.log('👇 Before subscribe')
-source.subscribe(
-  res => console.log(res),
-  err => console.error(err),
-  () => console.log('✅ Complete')
+source.subscribe(console.log, console.error, () =>
+  console.log('✅ Complete')
 )
 console.log('👆 After subscribe')

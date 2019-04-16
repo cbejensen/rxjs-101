@@ -15,5 +15,6 @@
   "zenMode.hideActivityBar": true,
   "zenMode.hideStatusBar": true,
   "zenMode.centerLayout": false,
-  "editor.lightbulb.enabled": false
+  "editor.lightbulb.enabled": false,
+  "prettier.printWidth": 60
 }
