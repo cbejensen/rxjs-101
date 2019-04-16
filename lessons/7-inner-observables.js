@@ -1,5 +1,10 @@
 import { from, fromEvent, of } from 'rxjs'
-import { concatMap, delay, mergeMap, tap } from 'rxjs/operators'
+import {
+  concatMap,
+  delay,
+  mergeMap,
+  tap
+} from 'rxjs/operators'
 import axios from 'axios'
 
 const content = document.querySelector('.content')
@@ -11,7 +16,10 @@ content.textContent = ''
 //   axios('https://icanhazdadjoke.com/').then(res => {
 //     content.textContent = ''
 //     res.data.joke.split('').forEach((letter, i) => {
-//       setTimeout(() => (content.textContent += letter), 20 * i)
+//       setTimeout(
+//         () => (content.textContent += letter),
+//         20 * i
+//       )
 //     })
 //   })
 // })
@@ -20,13 +28,17 @@ content.textContent = ''
 // source
 //   .pipe(
 //     tap(() => (content.textContent = 'Loading...')),
-//     mergeMap(() => from(axios('https://icanhazdadjoke.com/'))),
+//     mergeMap(() =>
+//       from(axios('https://icanhazdadjoke.com/'))
+//     ),
 //     tap(() => (content.textContent = '')),
 //     concatMap(res => from(res.data.joke)),
-//     concatMap(joke => of(joke).pipe(delay(20)))
+//     concatMap(letter => of(letter).pipe(delay(20)))
 //   )
-//   .subscribe(res => (content.textContent += res), console.error, () =>
-//     console.log('✅ Complete')
+//   .subscribe(
+//     res => (content.textContent += res),
+//     console.error,
+//     () => console.log('✅ Complete')
 //   )
 
 // mergeMap - subscribes to inner observable immediately

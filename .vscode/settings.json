@@ -1,20 +1,20 @@
 {
   "editor.formatOnSave": true,
-  // "editor.quickSuggestions": {
-  //   "other": false,
-  //   "comments": false,
-  //   "strings": false
-  // },
-  // "javascript.suggest.enabled": false,
-  // "editor.parameterHints.enabled": false,
-  // "breadcrumbs.enabled": false,
-  // "git.decorations.enabled": false,
-  // "editor.hideCursorInOverviewRuler": true,
-  // "git.enabled": false,
-  // "zenMode.hideTabs": true,
-  // "zenMode.hideActivityBar": true,
-  // "zenMode.hideStatusBar": true,
-  // "zenMode.centerLayout": false,
-  // "editor.lightbulb.enabled": false,
-  // "prettier.printWidth": 60
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "javascript.suggest.enabled": false,
+  "editor.parameterHints.enabled": false,
+  "breadcrumbs.enabled": false,
+  "git.decorations.enabled": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "git.enabled": false,
+  "zenMode.hideTabs": true,
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideStatusBar": true,
+  "zenMode.centerLayout": false,
+  "editor.lightbulb.enabled": false,
+  "prettier.printWidth": 60
 }
